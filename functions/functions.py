@@ -3,7 +3,7 @@ from classes.formula import Formula
 from classes.basic_maths import Basicmaths
 from classes.python_function import Pythonfunctions
 
-class Function(Formula, Basicmaths, Pythonfunctions):
+class Functions(Formula, Basicmaths, Pythonfunctions):
     
     def __ini__(self):
         pass
@@ -19,5 +19,5 @@ class Function(Formula, Basicmaths, Pythonfunctions):
     
     
 if __name__ == "__main__":
-    f = Function()
+    f = Functions()
     print(f.is_list({3,3}))
