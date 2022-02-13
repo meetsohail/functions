@@ -11,4 +11,4 @@ class Functions(Allfunctions):
     
 if __name__ == "__main__":
     f = Functions()
-    print(f.is_list([3,3]))
+    print(f.floor_division(3,0))

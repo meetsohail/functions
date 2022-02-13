@@ -18,12 +18,18 @@ class Basicmaths:
 
     def division(self, a, b):
         if self.is_integer(a,b):
-            return a/b
+            try:
+                return a/b
+            except ZeroDivisionError:
+                return "Not allowed to divide by zero."
         return self.integer_error()
     
     def modulus(self, a, b):
         if self.is_integer(a,b):
-            return a%b
+            try:
+                return a%b
+            except ZeroDivisionError:
+                return "Zero not allowed"
         return self.integer_error()
     
     def exponentiation(self, a, b):
@@ -33,6 +39,9 @@ class Basicmaths:
     
     def floor_division(self, a, b):
         if self.is_integer(a,b):
-            return a//b
+            try:
+                return a//b
+            except ZeroDivisionError:
+                return "Zero not allowed"
         return self.integer_error()
     

@@ -1,4 +1,5 @@
 class Pythonfunctions:
+    
     def is_dict(self, variable):
         if isinstance(variable, dict):
             return True
